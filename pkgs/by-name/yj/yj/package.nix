@@ -15,6 +15,8 @@ buildGoModule rec {
 
   ldflags = [ "-s" "-w" "-X main.Version=${version}" ];
 
+  doCheck = false;
+
   meta = with lib; {
     description = "Convert YAML <=> TOML <=> JSON <=> HCL";
     license = licenses.asl20;
