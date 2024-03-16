@@ -26771,6 +26771,8 @@ with pkgs;
 
   quark = callPackage ../servers/http/quark { };
 
+  quarkus-cli = callPackage ../development/tools/quarkus-cli { };
+
   smtprelay = callPackage ../servers/mail/smtprelay { };
 
   soft-serve = callPackage ../servers/soft-serve { };
